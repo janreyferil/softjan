@@ -1,5 +1,8 @@
 <?php
-
+use App\Model\User\Role;
+use App\Model\Education\Subject;
+use App\Model\User\User;
+use App\Model\User\UserDetail;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,5 +15,13 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return response()->json([
+        'role' => Role::all(),
+        'subject' => Subject::all(),
+        'user' => User::all(),
+        'detail' => UserDetail::all()
+    ],200);
+    // return $router->app->version();
 });
+
+$router->post('/register','User\RegisterController@registerUser');

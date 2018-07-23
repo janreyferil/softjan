@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d07ca5c02191f3c7b8987aa16fe7eba2",
+    "content-hash": "dd7e72503fbb58d4dd0a5a9516f3f5d8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -247,6 +247,53 @@
             ],
             "description": "A Lumen Generator You Are Missing",
             "time": "2018-07-04T10:41:30+00:00"
+        },
+        {
+            "name": "gladcodes/keygen",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gladchinda/keygen-php.git",
+                "reference": "8806d4440edd37a5545802a82202098b01bbafb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gladchinda/keygen-php/zipball/8806d4440edd37a5545802a82202098b01bbafb9",
+                "reference": "8806d4440edd37a5545802a82202098b01bbafb9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Keygen\\": "src/Keygen"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Glad Chinda",
+                    "email": "gladxeqs@gmail.com"
+                }
+            ],
+            "description": "A fluent PHP random key generator.",
+            "keywords": [
+                "generator",
+                "key",
+                "key generator",
+                "keygen",
+                "php",
+                "random"
+            ],
+            "time": "2018-07-15T23:24:35+00:00"
         },
         {
             "name": "illuminate/auth",
